@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziya Gökalp: Fikrin Babası</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Tailwind'in varsayılan fontunu Inter ile değiştirelim */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Pürüzsüz kaydırma */
+        }
+        /* Kahraman bölümü için özel bir gradyan */
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        }
+        /* Kartlar için hafif bir parlama efekti */
+        .card-glow {
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .card-glow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(253, 216, 53, 0.2); /* Afilli bir altın/sarı parlama */
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200">
+
+    <!-- Navigasyon (Basit ve Şık) -->
+    <nav class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md shadow-lg shadow-black/20">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white tracking-tight">Ziya Gökalp</h1>
+            <div class="flex space-x-4">
+                <a href="#hakkinda" class="text-slate-300 hover:text-white transition duration-300">Hakkında</a>
+                <a href="#fikirleri" class="text-slate-300 hover:text-white transition duration-300">Temel Fikirleri</a>
+                <a href="#eserleri" class="text-slate-300 hover:text-white transition duration-300">Eserleri</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Kahraman (Hero) Bölümü -->
+    <header class="hero-gradient min-h-[70vh] flex items-center justify-center text-center py-20 px-4 relative overflow-hidden">
+        <!-- Arka plan süslemesi -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10" style="background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 10px);"></div>
+        
+        <div class="z-10 max-w-4xl mx-auto">
+            <img src="https://placehold.co/150x150/334155/fde88a?text=ZG" 
+                 alt="Ziya Gökalp Portresi" 
+                 class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-amber-300 shadow-2xl"
+                 onerror="this.src='https://placehold.co/150x150/334155/fde88a?text=Ziya+G%C3%B6kalp'">
+                 <!--  -->
+            
+            <h2 class="text-5xl md:text-7xl font-black text-white leading-tight mb-4 tracking-tighter">
+                FİKRİN BABASI
+            </h2>
+            <p class="text-2xl md:text-3xl font-bold text-amber-300">
+                ZİYA GÖKALP
+            </p>
+            <p class="text-lg md:text-xl text-slate-300 mt-6 max-w-2xl mx-auto">
+                Türk milliyetçiliğinin, sosyolojisinin ve modern Türkiye'nin entelektüel mimarı.
+            </p>
+            <!-- YENİ EKLENEN SÖZ BÖLÜMÜ -->
+            <div class="mt-12 text-lg text-slate-400 italic border-l-4 border-amber-300 pl-4 max-w-lg mx-auto">
+                "Vatan ne Türkiye'dir Türklere, ne Türkistan; Vatan, büyük ve müebbet bir ülkedir: Turan!"
+            </div>
+            <!-- EKLENEN BÖLÜM SONU -->
+        </div>
+    </header>
+
+    <!-- Ana İçerik Alanı -->
+    <main class="container mx-auto px-4 py-16 md:py-24">
+
+        <!-- 2. Hakkında Bölümü -->
+        <section id="hakkinda" class="mb-24 scroll-mt-20">
+            <div class="max-w-4xl mx-auto bg-slate-800 rounded-xl shadow-2xl p-8 md:p-12 border border-slate-700">
+                <h3 class="text-4xl font-bold text-center text-amber-300 mb-8">O Kimdi?</h3>
+                <p class="text-lg text-slate-300 leading-relaxed mb-4">
+                    Mehmed Ziya Gökalp (1876 - 1924), Diyarbakır'da doğmuş bir şair, yazar, sosyolog ve siyaset adamıdır. "Türkçülük" akımını entelektüel bir zemine oturtan ve sistemleştiren kişi olarak, "Türk milliyetçiliğinin babası" unvanını almıştır. Fikirleriyle, çökmekte olan bir imparatorluğun enkazından modern bir ulus-devletin doğuşuna ilham vermiştir.
+                </p>
+                <p class="text-lg text-slate-300 leading-relaxed mb-4">
+                    Sadece bir düşünür değil, aynı zamanda bir eylem adamıydı. İttihat ve Terakki Cemiyeti'nde aktif rol aldı, Genç Kalemler hareketine katıldı. Malta sürgününde dahi yazmaya devam etti. Cumhuriyet'in kuruluş yıllarında, Büyük Millet Meclisi'nde milletvekilliği yaptı ve Anayasa taslağını hazırlayan komisyonda yer aldı.
+                </p>
+                <!-- YENİ EKLENEN PARAGRAF -->
+                <p class="text-lg text-slate-300 leading-relaxed">
+                    Gökalp'in en büyük katkısı, kültürü "hars" ve uygarlığı "medeniyet" olarak ikiye ayırmasıdır. Milli kimliğimizi oluşturan "harsı" (dil, örf, sanat) korumayı, Batı'nın evrensel "medeniyetini" (bilim, teknoloji, felsefe) ise almayı savundu. Bu formül, Cumhuriyet'in modernleşme projesinin temel taşı oldu.
+                </p>
+                <!-- EKLENEN PARAGRAF SONU -->
+            </div>
+        </section>
+
+        <!-- 3. Temel Fikirleri Bölümü -->
+        <section id="fikirleri" class="mb-24 scroll-mt-20">
+            <h3 class="text-4xl font-bold text-center text-white mb-12">Fikir Dünyası</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Kart 1: Türkçülük -->
+                <div class="card-glow bg-slate-800 rounded-xl p-8 border border-slate-700 shadow-xl">
+                    <h4 class="text-2xl font-bold text-amber-300 mb-4">Türkçülük</h4>
+                    <p class="text-slate-300">
+                        Gökalp'in sistemleştirdiği Türkçülük, ırkçı veya yayılmacı değil, kültürel bir milliyetçiliktir. Dili, dini, ahlakı ve sanatıyla ortak bir kültürü (harsı) paylaşan topluluğu "millet" olarak tanımlar. "Türkçülüğün Esasları" bu fikrin manifestosudur.
+                    </p>
+                </div>
+                
+                <!-- Kart 2: Hars ve Medeniyet -->
+                <div class="card-glow bg-slate-800 rounded-xl p-8 border border-slate-700 shadow-xl">
+                    <h4 class="text-2xl font-bold text-amber-300 mb-4">Hars ve Medeniyet</h4>
+                    <p class="text-slate-300">
+                        Bu ayrım, onun felsefesinin anahtarıdır. "Hars" milli ve özgündür (dil, edebiyat, gelenekler). "Medeniyet" ise evrenseldir ve milletler arası paylaşımla büyür (bilim, teknik, hukuk). Batı'nın medeniyetini alırken milli harsımızı kaybetmememizi savundu.
+                    </p>
+                </div>
+                
+                <!-- Kart 3: Sosyoloji -->
+                <div class="card-glow bg-slate-800 rounded-xl p-8 border border-slate-700 shadow-xl">
+                    <h4 class="text-2xl font-bold text-amber-300 mb-4">Milli Sosyoloji</h4>
+                    <p class="text-slate-300">
+                        Émile Durkheim'ın "dayanışmacı" (solidarist) sosyolojisini Türk toplumuna uyarladı. Toplumsal olguları ve "kolektif vicdanı" merkeze aldı. Türkiye'de ilk sosyoloji kürsüsünün kurucusudur ve "milli sosyoloji" ekolünü başlatmıştır.
+                    </p>
+                </div>
+
+            </div>
+        <section id="eserleri" class="mb-24 scroll-mt-20">
+            <h3 class="text-4xl font-bold text-center text-white mb-12">Başlıca Eserleri</h3>
+            <div class="max-w-4xl mx-auto bg-slate-800 rounded-xl p-8 border border-slate-700">
+                <!-- GÜNCELLENEN LİSTE YAPISI (2 Sütunlu) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Türkçülüğün Esasları (Fikir)
+                    </div>
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Türkleşmek, İslâmlaşmak, Muasırlaşmak
+                    </div>
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Kızıl Elma (Şiir)
+                    </div>
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Yeni Hayat (Şiir)
+                    </div>
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Altın Işık (Şiir ve Masallar)
+                    </div>
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Türk Medeniyeti Tarihi
+                    </div>
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Türk Töresi
+                    </div>
+                    <div class="text-lg text-slate-200 p-4 bg-slate-700/50 rounded-lg flex items-center">
+                        <span class="text-amber-300 font-bold mr-3 text-xl">✓</span> Makaleler (Çeşitli)
+                    </div>
+                </div>
+                <!-- GÜNCELLEME SONU -->
+            </div>
+        </section>
+
+        <!-- YENİ BÖLÜM: ETKİSİ -->
+        <section id="etkisi" class="scroll-mt-20">
+            <h3 class="text-4xl font-bold text-center text-white mb-12">Kalıcı Mirası</h3>
+            <div class="max-w-4xl mx-auto bg-slate-800 rounded-xl shadow-2xl p-8 md:p-12 border border-slate-700">
+                <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                    Ziya Gökalp'in 1924'teki erken vefatı, fikirlerinin yayılmasını durdurmadı. Mirası, modern Türkiye'nin DNA'sına işlemiştir.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <span class="text-amber-300 font-bold mr-3 text-2xl mt-1">→</span>
+                        <p class="text-lg text-slate-300">
+                            <strong>Mustafa Kemal Atatürk:</strong> Atatürk, Gökalp'i "Fikirlerimin babası" olarak nitelendirmiştir. Özellikle milliyetçilik, laiklik ve halkçılık ilkeleri, Gökalp'in sosyolojik analizlerinden derinlemesine etkilenmiştir.
+                        </p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-amber-300 font-bold mr-3 text-2xl mt-1">→</span>
+                        <p class="text-lg text-slate-300">
+                            <strong>Dil ve Eğitim:</strong> Türk Dil Kurumu ve Türk Tarih Kurumu'nun felsefi altyapısı, Gökalp'in "milli hars" arayışına dayanır. Eğitimde "milli" ve "modern" unsurların birleştirilmesi fikri onundur.
+                        </p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-amber-300 font-bold mr-3 text-2xl mt-1">→</span>
+                        <p class="text-lg text-slate-300">
+                            <strong>Hukuk Devrimi:</strong> Laik bir hukuk sistemi ve Medeni Kanun'un gerekliliği konusundaki ilk ve en güçlü savunuculardan biriydi. Dinin toplumsal bir kurum, hukukun ise medeni bir gereklilik olduğunu savunmuştur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- YENİ BÖLÜM SONU -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-center p-8 mt-24 border-t border-slate-800">
+        <p class="text-slate-400">
+            Ziya Gökalp'in fikir mirasına bir saygı duruşu.
+        </p>
+        <p class="text-slate-500 text-sm mt-2">
+            Fikirleri, 100 yıl sonra dahi Türkiye'nin yönünü aydınlatmaya devam ediyor.
+        </p>
+    </footer>
+
+</body>
+</html>
